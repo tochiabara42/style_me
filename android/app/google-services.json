@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "467685502718",
+    "project_id": "style-me-8027d",
+    "storage_bucket": "style-me-8027d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467685502718:android:af9ab2e4bc1154f87cbfaf",
+        "android_client_info": {
+          "package_name": "com.example.style_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467685502718-smpbss04di4fikald20mkmh2bk96ddat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYFeD6oDFjGUYhI5a8I91HPiuKg29Yijo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467685502718-smpbss04di4fikald20mkmh2bk96ddat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "467685502718-2nku929djep4jvdava68kk1u3rmg9us4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.styleMe.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
