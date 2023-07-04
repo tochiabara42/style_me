@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'main_page.dart';
+import 'auth/main_page.dart';
 
 
 void main() async {
@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Style Me',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
       ),
+      debugShowCheckedModeBanner: false,
       home: const MainPage()
     );
   }
