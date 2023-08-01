@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.13.1
   firebase_auth: ^4.6.2
+  cloud_firestore: 4.8.0 
+  smooth_page_indicator: ^1.0.0
+  provider:
 
 dev_dependencies:
   flutter_launcher_icons: "^0.9.2"
@@ -47,10 +50,7 @@ dev_dependencies:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/stylemeapp.jpg"
 
-  assets:
-  - "assets/styleme.jpg"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -71,8 +71,19 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - lib/images/apple.jpg
+    - lib/images/avocado.png
+    - lib/images/banana.png
+    - lib/images/cherries.png
+    - lib/images/grapes.png
+    - lib/images/greenapple.png
+    - lib/images/orange.png
+    - lib/images/peach.png
+    - lib/images/pear.png
+    - lib/images/pepper.png
+    - lib/images/pink.png
+    - lib/images/strawberry.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -102,9 +113,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   fonts:
-    - family: Pacifico
+    - family: Mali
       fonts:
-        - asset: fonts/Pacifico-Regular.ttf
+        - asset: fonts/Mali-Bold.ttf
           style: italic
     - family: RobotoMono
       fonts:

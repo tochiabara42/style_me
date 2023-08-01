@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
+import 'package:style_me/model/cart_model.dart';
 import 'firebase_options.dart';
-import 'main_page.dart';
+import 'auth/main_page.dart';
 
 
 void main() async {
@@ -20,12 +22,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
+    return ChangeNotifierProvider(
+      create: (context) => CartModel(),
+      child:  MaterialApp(
+      title: 'Shop Me',
+      theme: ThemeData(),
+      debugShowCheckedModeBanner: false,
       home: const MainPage()
+      )
     );
   }
 }
