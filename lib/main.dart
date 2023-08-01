@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
+import 'package:style_me/model/cart_model.dart';
 import 'firebase_options.dart';
 import 'auth/main_page.dart';
 
@@ -20,12 +22,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Style Me',
-      theme: ThemeData(
-      ),
+    return ChangeNotifierProvider(
+      create: (context) => CartModel(),
+      child:  MaterialApp(
+      title: 'Shop Me',
+      theme: ThemeData(),
       debugShowCheckedModeBanner: false,
       home: const MainPage()
+      )
     );
   }
 }
